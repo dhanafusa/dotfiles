@@ -23,6 +23,7 @@ let g:airline#extensions#branch#enabled = 0
 
 " setting
 set number
+set cursorline
 set statusline^=%{coc#status()}
 function! s:check_back_space() abort
   let col = col('.') - 1
