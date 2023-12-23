@@ -23,6 +23,7 @@ let g:airline#extensions#branch#enabled = 0
 
 " setting
 set number
+set relativenumber 
 set cursorline
 set statusline^=%{coc#status()}
 function! s:check_back_space() abort
@@ -207,3 +208,7 @@ nmap <space>e <Cmd>CocCommand explorer<CR>
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 " set lighline theme inside lightline config
 "let g:lightline = { 'colorscheme': 'tender' }
+nnoremap ; :
+nnoremap : ;
+inoremap ; :
+inoremap : ;
