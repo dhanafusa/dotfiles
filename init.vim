@@ -32,6 +32,11 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
+inoremap ; :
+inoremap : ;
+nnoremap ; :
+nnoremap : ;
+
 inoremap <silent><expr> <Tab>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<Tab>" :
@@ -209,7 +214,3 @@ nmap <space>e <Cmd>CocCommand explorer<CR>
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 " set lighline theme inside lightline config
 "let g:lightline = { 'colorscheme': 'tender' }
-nnoremap ; :
-nnoremap : ;
-inoremap ; :
-inoremap : ;
