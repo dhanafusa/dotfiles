@@ -1,4 +1,5 @@
 call plug#begin()
+Plug 'https://github.com/cohama/lexima.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'jacoborus/tender.vim'
