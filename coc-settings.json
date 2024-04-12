@@ -1,5 +1,6 @@
 {
   "coc.preferences.formatOnSaveFiletypes": ["css", "html", "markdown", "typescriptreact", "typescript", "javascriptreact", "javascript", "json", "graphql"],
   "prettier.printWidth": 500,
-  "prettier.singleQuote": true
+  "prettier.singleQuote": true,
+  "explorer.icon.enableNerdfont": true
 }
